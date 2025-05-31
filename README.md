@@ -23,25 +23,39 @@ The dataset consists of labeled flower images. Images were categorized into `eas
 A global thresholding method using histogram analysis. Achieved the highest IoGT average.
 
 **Example**  
-![Otsu Result](images/otsu_result.jpg)
+<img src="./Coursework/Threshold-Output/easy/easy_1.jpg" alt="Threshold easy Output" width="300"/>
+<img src="./Coursework/Threshold-Output/medium/medium_1.jpg" alt="Threshold medium Output" width="250"/>
+<img src="./Coursework/Threshold-Output/hard/hard_1.jpg" alt="Threshold hard Output" width="250"/>
+
+
 
 ### Split and Merge
 Region-based segmentation that recursively divides and merges image regions.
 
 **Example**  
-![Split and Merge Result](images/split_merge_result.jpg)
+<img src="./Coursework/split-Output/easy/easy_1.jpg" alt="split and merge easy Output" width="300"/>
+<img src="./Coursework/split-Output/medium/medium_1.jpg" alt="split and merge medium Output" width="250"/>
+<img src="./Coursework/split-Output/hard/hard_1.jpg" alt="split and merge hard Output" width="250"/>
+
 
 ### Canny Edge Detection
 Edge-based method combined with contour filling and morphological operations.
 
 **Example**  
-![Canny Result](images/canny_result.jpg)
+<img src="./Coursework/canny_output_final/easy/easy_1.jpg" alt="canny edge easy Output" width="300"/>
+<img src="./Coursework/canny_output_final/medium/medium_1.jpg" alt="canny edge medium Output" width="250"/>
+<img src="./Coursework/canny_output_final/hard/hard_1.jpg" alt="canny edge hard Output" width="250"/>
+
 
 ### Watershed
 Marker-based algorithm used to separate overlapping flower petals.
 
 **Example**  
-![Watershed Result](images/watershed_result.jpg)
+<img src="./Coursework/watershed-output-final/easy/easy_1.jpg" alt="watershed easy Output" width="300"/>
+<img src="./Coursework/watershed-output-final/medium/medium_1.jpg" alt="watershed medium Output" width="250"/>
+<img src="./Coursework/watershed-output-final/hard/hard_1.jpg" alt="watershed hard Output" width="250"/>
+
+
 
 ## Post-Processing
 
@@ -49,7 +63,7 @@ Applied morphological opening to remove small noise and artifacts post-segmentat
 
 ---
 
-## 📊 Results
+## Results
 
 | Method           | Mean IoGT |
 |------------------|-----------|
@@ -58,7 +72,6 @@ Applied morphological opening to remove small noise and artifacts post-segmentat
 | Watershed        | 0.56      |
 | Canny Detection  | 0.20      |
 
-![Comparison Table](images/comparison_table.png)
 
 ## 🛠 How to Run
 
@@ -66,5 +79,12 @@ Applied morphological opening to remove small noise and artifacts post-segmentat
    ```bash
    git clone https://github.com/yourusername/flower-segmentation.git
    cd flower-segmentation
+2. To run each indidual pipeline corresponding to a segmentation method :
+   ```bash
+   python Coursework/Threshold.py
+   python Coursework/splitMerge.py
+   python Coursework/Canny.py
+   python Coursework/watershed.py
+
 
 
